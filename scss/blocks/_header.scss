@@ -1,0 +1,164 @@
+.navbar {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-block: 40px;
+
+  @include tailMedia("xl") {
+    padding-block: 30px;
+  }
+
+  @include tablet() {
+    box-shadow: none;
+    padding-block: 20px;
+  }
+}
+
+.navbar__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 187px;
+
+  @include desktop() {
+    gap: 87px;
+  }
+
+  @include tailMedia("xl") {
+    gap: 45px;
+  }
+
+  @include tablet() {
+    justify-content: space-between;
+  }
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 69px;
+  z-index: 1010;
+
+  @include tailMedia("xl") {
+    gap: 45px;
+  }
+}
+
+.logoAsia,
+.logoForti {
+  @include desktop() {
+    width: 120px;
+  }
+
+  @include phone() {
+    width: 100px;
+  }
+
+  @include tailMedia() {
+    width: 80px;
+  }
+}
+
+.logoForti {
+  margin-top: 16px;
+}
+
+.navbarItem {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 16px;
+
+  @include tablet() {
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+    width: 55%;
+    height: 100vh;
+    background-color: #b1b1b1;
+    padding-top: 100px;
+    padding-left: 20px;
+
+    transition: all 0.3s ease-in;
+  }
+
+  @include tailMedia() {
+    width: 100%;
+  }
+}
+
+.navbarActive {
+    left: 0;
+}
+
+/* Navbar LInk style */
+.navbarLink {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $red;
+  }
+
+  @include desktop() {
+    font-size: 18px;
+  }
+
+  @include tailMedia("xl") {
+    font-size: 15px;
+  }
+}
+
+// Hmaburger Btn
+.hamburgerBtn {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 1010;
+
+    @include tablet() {
+        display: flex;
+    }
+
+    @include tailMedia() {
+        margin-top: 8px;
+    }
+}
+
+.hamburgerBtn > span {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.747);
+    transition: all 0.3s ease;
+
+    @include tailMedia() {
+        width: 30px;
+        height: 2px;
+    }
+}
+
+.hamburAnimated > span:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.hamburAnimated > span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburAnimated > span:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,119 @@
+.forti__cases {
+    margin-block: 160px;
+
+    @include phone() {
+        margin-block: 100px;
+    }
+
+    @include tailMedia() {
+        margin-block: 60px;
+    }
+}
+
+.forti__cases-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.forti__title {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: 700;
+
+    span {
+        width: 15px;
+        height: 15px;
+        background-color: $red;
+        display: block;
+    }
+
+    @include tablet() {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    @include tailMedia() {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
+
+.forti__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @include tailMedia("xl") {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include phone() {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+
+.forti__card {
+    max-width: 560px;
+    padding: 60px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+
+    @include tailMedia("xl") {
+        padding: 40px;
+    }
+
+    @include phone() {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include tailMedia() {
+        padding: 10px;
+        border-radius: 20px;
+    }
+}
+
+.forti__card h3 {
+    margin-top: 60px;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include tablet() {
+        font-size: 26px;
+    }
+
+    @include phone() {
+        text-align: center;
+        font-size: 22px;
+        line-height: normal;
+    }
+}
+
+.forti__card p {
+    margin-block: 20px 53px;
+    font-size: 20px;
+    line-height: 27px;
+
+    @include phone() {
+        text-align: center;
+    }
+
+    @include tailMedia() {
+        text-align: justify;
+        margin-block: 15px 20px;
+    }
+}
+
+.forti__border > li {
+    border-color: $red;
+}

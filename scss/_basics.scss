@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1760px;
+  margin: 0 auto;
+
+  @include media(1024px, 1800px) {
+    padding-inline: 20px;
+  }
+
+  @include tablet() {
+    padding-inline: 15px;
+  }
+
+  @include phone() {
+    padding-inline: 10px;
+  }
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.forti__attachment {
+  @include forti__attach("../assets/images/fortinet__fixed-image1.jpg");
+}
+
+.forti__attachment1 {
+  @include forti__attach('../assets/images/fortinet__fixed-image2.jpg');
+}
