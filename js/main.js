@@ -26,11 +26,26 @@ videoOpen.forEach(openV => {
   });
 });
 
-videoClose.addEventListener("click", () => {
+function closeVideoPopup() {
   video__popup.style.display = "none";
   video.pause();
   video.src = "";
+}
+
+video__popup.addEventListener("click", () => {
+  closeVideoPopup()
+});
+
+videoClose.addEventListener("click", () => {
+  closeVideoPopup()
 })
+
+document.onscroll = () => {
+  closeVideoPopup();
+
+  hamburger.classList.remove("hamburAnimated");
+  navbarItem.classList.remove("navbarActive");
+};
 
 // ---------------
 const launches__video = document.querySelectorAll(".launches__video");

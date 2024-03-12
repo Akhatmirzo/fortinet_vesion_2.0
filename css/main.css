@@ -1411,13 +1411,29 @@ a {
   justify-content: center;
   flex-direction: column;
   gap: 50px;
-  background-color: rgba(0, 0, 0, 0.5019607843);
+  background-color: rgba(0, 0, 0, 0.6156862745);
   padding: 150px;
   z-index: 99999;
 }
 .video__popup video {
   width: 80vw;
   border: 1px solid #000000;
+}
+@media screen and (max-width: 767px) {
+  .video__popup video {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .video__popup {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .video__popup {
+    gap: 30px;
+    padding: 10px;
+  }
 }
 
 #videoClose {
@@ -1431,7 +1447,7 @@ a {
   display: block;
   width: 40px;
   height: 4px;
-  background-color: rgba(0, 0, 0, 0.747);
+  background-color: rgba(255, 0, 0, 0.747);
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 540px) {

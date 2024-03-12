@@ -10,13 +10,26 @@
   justify-content: center;
   flex-direction: column;
   gap: 50px;
-  background-color: #00000080;
+  background-color: #0000009d;
   padding: 150px;
   z-index: 99999;
 
   video {
     width: 80vw;
     border: 1px solid #000000;
+
+    @include phone() {
+      width: 100vw;
+    }
+  }
+
+  @include tablet() {
+    padding: 30px;
+  }
+
+  @include phone() {
+    gap: 30px;
+    padding: 10px;
   }
 }
 
@@ -31,7 +44,7 @@
   display: block;
   width: 40px;
   height: 4px;
-  background-color: rgba(0, 0, 0, 0.747);
+  background-color: rgba(255, 0, 0, 0.747);
   transition: all 0.3s ease;
 
   @include tailMedia() {
