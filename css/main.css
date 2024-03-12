@@ -265,6 +265,13 @@ a {
   transform: rotate(-45deg);
 }
 
+.bottom__navbar {
+  margin-block: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .aboutUs {
   margin-block: 80px 160px;
 }
