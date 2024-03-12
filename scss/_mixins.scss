@@ -90,8 +90,12 @@
   background-position: center;
   background-attachment: fixed;
 
-  @include tailMedia() {
-    height: 500px;
+  @include tablet() {
+    height: 700px;
+  }
+
+  @include phone() {
+    display: none;
   }
 
   @content;

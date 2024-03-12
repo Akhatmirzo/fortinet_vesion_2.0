@@ -57,9 +57,14 @@ a {
   background-position: center;
   background-attachment: fixed;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1023px) {
   .forti__attachment {
-    height: 500px;
+    height: 700px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .forti__attachment {
+    display: none;
   }
 }
 
@@ -72,9 +77,14 @@ a {
   background-position: center;
   background-attachment: fixed;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1023px) {
   .forti__attachment1 {
-    height: 500px;
+    height: 700px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .forti__attachment1 {
+    display: none;
   }
 }
 
