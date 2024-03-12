@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fortinet</title>
+
+    <!-- Swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="navbar">
       <div class="container navbar__wrapper">
         <div class="navbar__logo">
-          <a href="/">
+          <a href="#">
             <img
               src="./assets/images/centralAsia_logo.svg"
               alt="Central Asia logo"
@@ -18,7 +25,7 @@
             />
           </a>
 
-          <a href="/">
+          <a href="#">
             <img
               src="./assets/images/fortinet_logo.svg"
               alt="Fortinet logo"
@@ -29,13 +36,13 @@
 
         <ul class="navbarItem">
           <li>
-            <a href="/" class="navbarLink"> Next Generation Firewall </a>
+            <a href="#ourProductFirewall" class="navbarLink"> Next Generation Firewall </a>
           </li>
           <li>
-            <a href="/" class="navbarLink"> Secure Ethernet Switches </a>
+            <a href="#ourProductSecure" class="navbarLink"> Secure Ethernet Switches </a>
           </li>
           <li>
-            <a href="/" class="navbarLink"> Secure Wireless LAN </a>
+            <a href="#ourProductWireless" class="navbarLink"> Secure Wireless LAN </a>
           </li>
         </ul>
 
@@ -78,7 +85,7 @@
       </section>
 
       <!-- Our Product -->
-      <section class="ourProduct">
+      <section class="ourProduct" id="ourProductFirewall">
         <div class="container ourProduct__wrapper">
           <div class="ourProduct__content">
             <h2>
@@ -121,7 +128,7 @@
               Solutions, discuss the latest innovations in NGFWs.
             </p>
 
-            <button class="primary__btn">Watch now</button>
+            <button class="primary__btn videoOpen" name="./assets/video/fortinet__video2.mp4">Watch now</button>
           </div>
 
           <div class="launches__content-video">
@@ -133,7 +140,7 @@
               <div></div>
               <video
                 class="launches__blog"
-                src="./assets/video/fortinet__video.mp4"
+                src="./assets/video/fortinet__video2.mp4"
               ></video>
             </div>
           </div>
@@ -243,13 +250,185 @@
       </section>
 
       <!-- ---------------  -->
+      <section class="security__service">
+        <div class="container security__service-wrapper">
+          <div class="service__title">
+            <h2 class="forti__title">
+              FortiGuard AI-Powered Security Services <span></span>
+            </h2>
+
+            <div class="swiperServiceBtns">
+              <button class="swiperServicePrev">
+                <img
+                  src="./assets/images/arrow__right.svg"
+                  alt="arrow__right"
+                />
+              </button>
+              <button class="swiperServiceNext">
+                <img
+                  src="./assets/images/arrow__right.svg"
+                  alt="arrow__right"
+                />
+              </button>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper swiperService">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide forti__card">
+                <img src="./assets/images/av__icon.svg" alt="av__icon.svg" />
+
+                <h3>Antivirus service</h3>
+
+                <p>
+                  Protects against the latest polymorphic attacks, viruses,
+                  malware (including ransomware), and other threats
+                </p>
+              </div>
+              <div class="swiper-slide forti__card">
+                <img src="./assets/images/as__icon.svg" alt="as__icon.svg" />
+
+                <h3>Antispam</h3>
+
+                <p>
+                  Dramatically reduces spam at the perimeter through a
+                  multi-layered approach to filtering email
+                </p>
+              </div>
+              <div class="swiper-slide forti__card">
+                <img src="./assets/images/dlp__icon.svg" alt="dlp__icon" />
+
+                <h3>FortiGuard Data Loss Prevention Service</h3>
+
+                <p>
+                  Blocks intentional and accidental disclosures of sensitive
+                  data while addressing key requirements for data security
+                  associated with major frameworks
+                </p>
+              </div>
+              <div class="swiper-slide forti__card">
+                <img src="./assets/images/dlp__icon.svg" alt="dlp__icon" />
+
+                <h3>FortiGuard Data Loss Prevention Service</h3>
+
+                <p>
+                  Blocks intentional and accidental disclosures of sensitive
+                  data while addressing key requirements for data security
+                  associated with major frameworks
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ---------------  -->
+      <section class="resourse">
+        <div class="container resourse-wrapper">
+          <div class="resourse__title">
+            <h2 class="forti__title">Resources</h2>
+
+            <div class="swiperResourseBtns">
+              <button class="swiperResoursePrev">
+                <img
+                  src="./assets/images/arrow__right.svg"
+                  alt="arrow__right"
+                />
+              </button>
+              <button class="swiperResourseNext">
+                <img
+                  src="./assets/images/arrow__right.svg"
+                  alt="arrow__right"
+                />
+              </button>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper swiperResourse">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="forti__resourse">
+                  <img src="./assets/images/resources1.jpg" alt="resourse" />
+
+                  <h3>Five Advantages of Fortinet Data Center Firewalls</h3>
+
+                  <p>
+                    Fortinet’s comprehensive portfolio of data center
+                    cybersecurity solutions, including FortiGate Next-Generation
+                    Firewalls (NGFWs), enable organizations to build the
+                    dynamic, hybrid environments organizations need without
+                    compromising on security or performance.
+                  </p>
+
+                  <hr />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="forti__resourse">
+                  <img src="./assets/images/resources2.jpg" alt="resourse" />
+
+                  <h3>Seven Major Challenges Facing Today’s Hybrid Networks</h3>
+
+                  <p>
+                    Hybrid dynamic environments allow IT teams to create fast
+                    lanes for building, implementing, interconnecting, and
+                    managing critical technologies and processes, whether
+                    internal or external.
+                  </p>
+
+                  <hr />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="forti__resourse">
+                  <img src="./assets/images/resources3.jpg" alt="resourse" />
+
+                  <h3>
+                    Seamless Security Unleashed: Empowering Your Organization
+                    with Hybrid Mesh Firewall
+                  </h3>
+
+                  <p>
+                    By adopting integrated solutions such as new hybrid mesh
+                    firewalls (HMFs), businesses can mitigate challenges,
+                    enhance efficiency, and maintain robust security measures in
+                    the digital landscape.
+                  </p>
+
+                  <hr />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="forti__resourse">
+                  <img src="./assets/images/resources3.jpg" alt="resourse" />
+
+                  <h3>
+                    Seamless Security Unleashed: Empowering Your Organization
+                    with Hybrid Mesh Firewall
+                  </h3>
+
+                  <p>
+                    By adopting integrated solutions such as new hybrid mesh
+                    firewalls (HMFs), businesses can mitigate challenges,
+                    enhance efficiency, and maintain robust security measures in
+                    the digital landscape.
+                  </p>
+
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- ---------------  -->
 
       <section class="forti__attachment"></section>
 
       <!-- Our Product -->
-      <section class="ourProduct">
+      <section class="ourProduct" id="ourProductSecure">
         <div class="container ourProduct__wrapper">
           <div class="ourProduct__content">
             <h2>
@@ -294,7 +473,7 @@
               modern campus and scale as connectivity needs grow.
             </p>
 
-            <button class="primary__btn">Watch now</button>
+            <button class="primary__btn videoOpen" name="./assets/video/fortinet__video.mp4">Watch now</button>
           </div>
 
           <div class="launches__content-video">
@@ -353,7 +532,7 @@
               point for management and configuration.
             </p>
 
-            <button class="primary__btn">Watch now</button>
+            <button class="primary__btn videoOpen" name="./assets/video/fortinet__video.mp4">Watch now</button>
           </div>
 
           <div class="launches__content-video">
@@ -496,12 +675,86 @@
       </section>
 
       <!-- ----------------------------------- -->
+      <!-- ---------------  -->
+      <section class="resourse">
+        <div class="container resourse-wrapper">
+          <div class="resourse__title">
+            <h2 class="forti__title">Resources</h2>
+
+            <div class="swiperResourseBtns">
+              <button class="swiperResoursePrev">
+                <img
+                  src="./assets/images/arrow__right.svg"
+                  alt="arrow__right"
+                />
+              </button>
+              <button class="swiperResourseNext">
+                <img
+                  src="./assets/images/arrow__right.svg"
+                  alt="arrow__right"
+                />
+              </button>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper swiperResourse">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/Fortinet_Product_Matrix.pdf" target="_blank" class="forti__resourse">
+                  <img src="./assets/images/resources4.jpg" alt="resourse" />
+
+                  <h3>FortiSwitch Campus Datasheet</h3>
+
+                  <p>FortiSwitch Campus Datasheet</p>
+
+                  <hr />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/Fortinet_Product_Matrix.pdf" target="_blank" class="forti__resourse">
+                  <img src="./assets/images/resources5.jpg" alt="resourse" />
+
+                  <h3>Fortinet Product Matrix</h3>
+
+                  <p>Fortinet Product Matrix</p>
+
+                  <hr />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/Fortinet_Product_Matrix.pdf" target="_blank" class="forti__resourse">
+                  <img src="./assets/images/resources6.jpg" alt="resourse" />
+
+                  <h3>FortiSwitch Manager Datasheet</h3>
+
+                  <p>FortiSwitch Manager Datasheet</p>
+
+                  <hr />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/Fortinet_Product_Matrix.pdf" target="_blank" class="forti__resourse">
+                  <img src="./assets/images/resources4.jpg" alt="resourse" />
+
+                  <h3>FortiSwitch Campus Datasheet</h3>
+
+                  <p>FortiSwitch Campus Datasheet</p>
+
+                  <hr />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------  -->
       <!-- ----------------------------------- -->
 
       <section class="forti__attachment1"></section>
 
       <!-- Our Product -->
-      <section class="ourProduct">
+      <section class="ourProduct" id="ourProductWireless">
         <div class="container ourProduct__wrapper">
           <div class="ourProduct__content">
             <h2>
@@ -542,7 +795,7 @@
               point for management and configuration.
             </p>
 
-            <button class="primary__btn">Watch now</button>
+            <button class="primary__btn videoOpen" name="./assets/video/fortinet__video.mp4">Watch now</button>
           </div>
 
           <div class="launches__content-video">
@@ -603,41 +856,8 @@
               <h3>SECURITY FABRIC INTEGRATION</h3>
 
               <p>
-                FortiLink extends Security Fabric protection to the Ethernet
-                access layer
-              </p>
-            </li>
-            <li class="forti__card">
-              <img src="./assets/images/zero__touch.svg" alt="zero__touch" />
-
-              <h3>ZERO-TOUCH PROVISIONING</h3>
-
-              <p>
-                Auto-discovery & configuration of Ethernet ports and security
-                policies
-              </p>
-            </li>
-            <li class="forti__card">
-              <img
-                src="./assets/images/high__scalability.svg"
-                alt="high__scalability"
-              />
-
-              <h3>HIGH SCALABILITY</h3>
-
-              <p>
-                1, 10, 100, & multi-gig Ethernet ports & up to 100 GE uplinks
-                scale from desktop to data center
-              </p>
-            </li>
-            <li class="forti__card">
-              <img src="./assets/images/unparalleled.svg" alt="unparalleled" />
-
-              <h3>UNPARALLELED VISIBILITY</h3>
-
-              <p>
-                Protect your assets with rich macro- and micro-segmentation
-                capabilities.
+                Integration with the Fortinet Security Fabric provides Secure
+                Networking to the edge of the network
               </p>
             </li>
             <li class="forti__card">
@@ -646,11 +866,21 @@
                 alt="auto__provisioning"
               />
 
-              <h3>POE AND AUTO-PROVISIONING</h3>
+              <h3>AUTOMATION</h3>
 
               <p>
-                Power network & IoT devices with next-generation 802.3bt POE &
-                free IoT provisioning with FortiLink NAC
+                Removing human reaction time from the equation improves network
+                security at the access layer
+              </p>
+            </li>
+            <li class="forti__card">
+              <img src="./assets/images/deployment.svg" alt="deployment" />
+
+              <h3>ZERO-TOUCH DEPLOYMENT</h3>
+
+              <p>
+                Fast and simple deployment means no on-site tech support
+                required
               </p>
             </li>
             <li class="forti__card">
@@ -663,6 +893,28 @@
                 security at network edges
               </p>
             </li>
+            <li class="forti__card">
+              <img src="./assets/images/scalability.svg" alt="scalability" />
+
+              <h3>SCALABILITY FROM 1 TO 10,000 APS</h3>
+
+              <p>
+                A range of platforms makes it ideal for any sized deployment
+              </p>
+            </li>
+            <li class="forti__card">
+              <img
+                src="./assets/images/high__scalability.svg"
+                alt="high__scalability"
+              />
+
+              <h3>WIRELESS PRESENCE ANALYTICS</h3>
+
+              <p>
+                Presence analytics capabilities track visitors and show path
+                analysis
+              </p>
+            </li>
           </ul>
         </div>
       </section>
@@ -670,48 +922,258 @@
       <!-- Forti Cases -->
       <section class="forti__cases">
         <div class="container forti__cases-wrapper">
-          <h2 class="forti__title">Use Cases <span></span></h2>
+          <h2 class="forti__title">
+            Secure Wireless LAN Use Cases <span></span>
+          </h2>
 
           <ul class="forti__cards forti__border">
+            <li class="forti__card">
+              <img
+                src="./assets/images/security__fabric.svg"
+                alt="security__fabric"
+              />
+
+              <h3>SD-BRANCH</h3>
+
+              <p>
+                Deploying branches can be expensive and difficult. Using
+                FortiAPs along with Fortinet Secure SD-WAN creates a Secure
+                SD-Branch
+              </p>
+            </li>
             <li class="forti__card">
               <img src="./assets/images/campus.svg" alt="campus" />
 
               <h3>Campus</h3>
 
               <p>
-                Get an intelligent, resilient enterprise switching and wireless
-                campus to support even the most demanding business technology
-                challenges
+                Local-area networks in campuses can be complex. With FortiGate
+                as a LAN controller, IT reduces risk by converging networking
+                and security
               </p>
             </li>
             <li class="forti__card">
-              <img src="./assets/images/branch.svg" alt="branch" />
+              <img src="./assets/images/teleworker.svg" alt="teleworker" />
 
-              <h3>SD-BRANCH</h3>
-
-              <p>
-                Converge security, WAN, and LAN with the most secure and
-                manageable remote branch solution in the industry
-              </p>
-            </li>
-            <li class="forti__card">
-              <img
-                src="./assets/images/converged__ot.svg"
-                alt="converged__ot"
-              />
-
-              <h3>OT</h3>
+              <h3>Teleworker</h3>
 
               <p>
-                Increase converged IT/OT network security and performance with
-                simple, scalable FortiSwitch and FortiSwitch Rugged
+                Extend corporate network access securely to remote workers by
+                deploying FortiAPs as remote APs
               </p>
             </li>
           </ul>
         </div>
       </section>
+
+      <!-- ---------------  -->
+      <section class="resourse">
+        <div class="container resourse-wrapper">
+          <div class="resourse__title">
+            <h2 class="forti__title">Resources</h2>
+
+            <div class="swiperResourseBtns">
+              <button class="swiperResoursePrev">
+                <img
+                  src="./assets/images/arrow__right.svg"
+                  alt="arrow__right"
+                />
+              </button>
+              <button class="swiperResourseNext">
+                <img
+                  src="./assets/images/arrow__right.svg"
+                  alt="arrow__right"
+                />
+              </button>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper swiperResourse">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="/" class="forti__resourse">
+                  <img src="./assets/images/resources7.jpg" alt="resourse" />
+
+                  <h3>Fortinet Wireless Accessories Portfolio Data Sheet</h3>
+
+                  <p>Fortinet Wireless Accessories Portfolio Data Sheet</p>
+
+                  <hr />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/" class="forti__resourse">
+                  <img src="./assets/images/resources8.jpg" alt="resourse" />
+
+                  <h3>Forti AIOPS Data Sheet</h3>
+
+                  <p>Forti AIOPS Data Sheet</p>
+
+                  <hr />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/" class="forti__resourse">
+                  <img src="./assets/images/resources9.jpg" alt="resourse" />
+
+                  <h3>FortiLAN Cloud Datasheet</h3>
+
+                  <p>FortiLAN Cloud Datasheet</p>
+
+                  <hr />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/" class="forti__resourse">
+                  <img src="./assets/images/resources7.jpg" alt="resourse" />
+
+                  <h3>FortiSwitch Campus Datasheet</h3>
+
+                  <p>FortiSwitch Campus Datasheet</p>
+
+                  <hr />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------  -->
+
+      <div class="video__popup">
+        <button id="videoClose">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <video src="" controls></video>
+      </div>
     </main>
 
-    <script src="./js/main.js"></script>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-top">
+            <div class="footer__content">
+              <div class="f-content">
+                <h3 class="f-link-heading">PRODUCTS</h3>
+                <div class="f-product-links">
+                  <h3 class="link-header">Enterprise</h3>
+                  <a href="#" class="f-link">Next Generation Firewall</a>
+                  <a href="#" class="f-link">Secure Ethernet Switches</a>
+                  <a href="#" class="f-link">Secure Wireless LAN</a>
+                </div>
+                <div class="f-product-links">
+                  <h3 class="link-header">Small Mid-Sized Business</h3>
+                  <a href="#" class="f-link">Overview</a>
+                </div>
+                <div class="f-product-links">
+                  <h3 class="link-header">Service Providers</h3>
+                  <a href="#" class="f-link">Overview</a>
+                </div>
+              </div>
+              <div class="f-content">
+                <h3 class="f-link-heading">Partners</h3>
+                <div class="f-product-links">
+                  <a href="#" class="f-link">Overview</a>
+                  <a href="#" class="f-link">Alliances Ecosystem</a>
+                  <a href="#" class="f-link">Find a Partner</a>
+                  <a href="#" class="f-link">Become a Partner</a>
+                  <a href="#" class="f-link">Partner Login</a>
+                </div>
+              </div>
+              <div class="f-content">
+                <h3 class="f-link-heading">More</h3>
+                <div class="f-product-links">
+                  <a href="#" class="f-link">About Us</a>
+                  <a href="#" class="f-link">Training</a>
+                  <a href="#" class="f-link">Resources</a>
+                  <a href="#" class="f-link">Support</a>
+                  <a href="#" class="f-link">Downloads</a>
+                  <a href="#" class="f-link">Cyber Glossary</a>
+                  <a href="#" class="f-link">Careers</a>
+                  <a href="#" class="f-link">Early Talent Program</a>
+                  <a href="#" class="f-link">Investor Relations</a>
+                  <a href="#" class="f-link">Social Resposibility</a>
+                  <a href="#" class="f-link">Sitemap</a>
+                </div>
+              </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="f-content newsletter">
+              <h3 class="f-link-heading">Email newsletter</h3>
+              <form action="/" class="input-field">
+                <div class="f-input-field">
+                  <input
+                    type="text"
+                    placeholder="Enter e-mail adress"
+                    class="f-input"
+                  />
+                  <button type="submit" class="f-input-btn">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
+                </div>
+                <div class="f-input-check">
+                  <input type="checkbox" class="f-checkbox" />
+                  <p class="checkbox-text">
+                    I want to receive news and product emails. Read our privacy
+                    policy.
+                  </p>
+                </div>
+              </form>
+              <h3 class="f-link-heading">Central Asia DC Contacts</h3>
+              <div class="f-product-links">
+                <p class="f-subadress">Tashkent, Fergana street, 15</p>
+                <a href="tel:+998781485300" class="f-subadress"
+                  >+998 (78) 148-53-00</a
+                >
+                <a href="mailto:info@cadc.uz" class="f-subadress"
+                  >info@cadc.uz</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="f-logo-wrap">
+              <a href="#" class="logo-first">
+                <img src="./assets/images/CAD logo white 1.svg" alt="" />
+              </a>
+              <a href="#">
+                <img src="./assets/images/Fortinet logo 2.svg" alt="" />
+              </a>
+            </div>
+            <div class="f-content-links">
+              <a href="#" class="f-bottom-link">Terms of Service</a>
+              <a href="#" class="f-bottom-link">Privacy Policy</a>
+              <a href="#" class="f-bottom-link"
+                >Notice for California Residents</a
+              >
+              <a href="#" class="f-bottom-link"
+                >Do not Sell or Share my Personal Information</a
+              >
+              <a href="#" class="f-bottom-link">GDPR</a>
+              <a href="#" class="f-bottom-link">Cookie Settings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/Group 51.svg" alt="img" class="f-layer" />
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="./js/main.js"></script>
   </body>
 </html>

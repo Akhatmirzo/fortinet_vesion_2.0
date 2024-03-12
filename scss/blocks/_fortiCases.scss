@@ -40,6 +40,10 @@
     @include tailMedia() {
         font-size: 22px;
         line-height: 25px;
+
+        span {
+            display: none;
+        }
     }
 }
 

@@ -1,0 +1,56 @@
+.security__service {
+  margin-block: 160px;
+
+  @include phone() {
+    margin-block: 80px;
+  }
+}
+
+.security__service-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  @include phone() {
+    gap: 20px;
+  }
+}
+
+.service__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiperService {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.swiperServiceBtns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.swiperServiceBtns button {
+  border: none;
+  background-color: $red;
+  padding: 26px 30px;
+  border-radius: 50%;
+
+  img {
+    @include tailMedia() {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  @include phone() {
+    padding: 15px;
+  }
+}
+
+.swiperServiceBtns button:first-child {
+  transform: rotate(180deg);
+}

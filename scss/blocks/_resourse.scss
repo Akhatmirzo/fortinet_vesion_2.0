@@ -1,0 +1,129 @@
+.resourse {
+  margin-block: 160px;
+
+  @include phone() {
+    margin-block: 80px;
+  }
+}
+
+.resourse-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  @include phone() {
+    gap: 20px;
+  }
+}
+
+.resourse__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiperResourse {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.swiperResourseBtns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.swiperResourseBtns button {
+  border: none;
+  background-color: $red;
+  padding: 26px 30px;
+  border-radius: 50%;
+
+  img {
+    @include tailMedia() {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  @include phone() {
+    padding: 15px;
+  }
+}
+
+.swiperResourseBtns button:first-child {
+  transform: rotate(180deg);
+}
+
+.resourse .swiper-slide {
+  @include phone() {
+    width: 100% !important;
+  }
+}
+
+.forti__resourse {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  @include phone() {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include tailMedia() {
+    padding: 10px;
+  }
+}
+
+.forti__resourse img {
+  width: 100%;
+}
+
+.forti__resourse hr {
+  width: 100%;
+  height: 4px;
+  background-color: $red;
+}
+
+.forti__resourse p {
+  margin-block: 20px 53px;
+  font-size: 20px;
+  line-height: 27px;
+
+  @include phone() {
+    text-align: center;
+  }
+
+  @include tailMedia() {
+    text-align: justify;
+    margin-block: 15px 20px;
+  }
+}
+
+.forti__resourse h3 {
+  margin-top: 60px;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @include desktop() {
+    font-size: 28px;
+  }
+
+  @include tailMedia("xl") {
+    font-size: 26px;
+    line-height: 30px;
+  }
+ 
+  @include tablet() {
+    font-size: 22px;
+  }
+
+  @include phone() {
+    text-align: center;
+    font-size: 22px;
+    line-height: normal;
+  }
+}

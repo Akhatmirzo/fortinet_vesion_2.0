@@ -1,0 +1,59 @@
+.video__popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #00000080;
+  padding: 150px;
+  z-index: 99999;
+
+  video {
+    width: 80vw;
+    border: 1px solid #000000;
+  }
+}
+
+#videoClose {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  align-self: flex-end;
+}
+
+#videoClose span {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.747);
+  transition: all 0.3s ease;
+
+  @include tailMedia() {
+    width: 30px;
+    height: 2px;
+  }
+}
+
+#videoClose > span:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+#videoClose > span:nth-child(2) {
+  opacity: 0;
+}
+
+#videoClose > span:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+}

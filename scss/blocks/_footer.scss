@@ -1,0 +1,298 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 90px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.f-layer {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: 60px;
+  right: 60px;
+  width: 500px;
+  height: 355px;
+  object-fit: cover;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer__content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+
+  @include tailMedia("xl") {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.f-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.f-link-heading {
+  color: rgb(228, 34, 22);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.link-header {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.f-product-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.f-link {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.f-link:hover {
+  color: rgb(228, 34, 22);
+  text-decoration: underline;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 611px;
+  background-color: rgb(255, 255, 255);
+}
+
+.f-content.newsletter {
+  padding-left: 100px;
+
+  @include desktop() {
+    padding-left: 50px;
+  }
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.f-input-field {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.f-input {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.f-input::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 0.5;
+}
+
+.f-input-btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(228, 34, 22);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.f-input-btn ion-icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+.f-input-check {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.f-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-text {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.f-subadress {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.f-subadress:nth-child(2):hover {
+  color: rgb(228, 34, 22);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.f-subadress:nth-child(3):hover {
+  color: rgb(228, 34, 22);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  flex-direction: column;
+}
+
+.logo-first {
+  padding-right: 60px;
+}
+
+.f-content-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.f-bottom-link {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.f-bottom-link:hover {
+  color: rgb(228, 34, 22);
+}
+
+@include media(0px, 991px) {
+  .vertical-line {
+    display: none;
+  }
+
+  .f-content.newsletter {
+    padding: 0;
+  }
+
+  .main-container {
+    padding: 0 40px;
+  }
+
+  .f-content-links {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+}
+
+@include phone() {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__content {
+    display: none;
+  }
+
+  .f-layer {
+    display: none;
+  }
+
+  .f-logo-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .f-content-links {
+    gap: 20px;
+  }
+
+  .footer :where(h2, h3, p, a) {
+    text-align: center;
+  }
+  
+  .f-link-heading {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .footer-bottom {
+    align-items: center;
+  }
+
+  .f-logo-wrap {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .f-content-links {
+    align-items: center;
+    justify-content: center;
+  }
+}
